@@ -20,12 +20,14 @@ using System.Windows.Shapes;
 
 namespace Calcoolator
 {
-public class MEMORY
+    //Memory list Item
+    public class MEMORY
     {
         public string zmienna { get; set; }
         public string wartosc { get; set; }
     }
-
+    
+    //Quick calculate
     public static class QCALC
     {
         public static double Qeq(string wejscie)
@@ -39,14 +41,10 @@ public class MEMORY
         }
 
     }
-
+    
+    //Main calculate class
     public class MCALC
-    {
-        public MCALC()
-        {
-
-        }
-
+    { 
         public string wartosc(string zmienna)
         {
             string otp = "";
@@ -281,6 +279,7 @@ public class MEMORY
         }
     } 
 
+    //Calculate equations
     public class EQEXE
     {
         public double WYJSCIE = 0.0;
@@ -1227,6 +1226,7 @@ public class MEMORY
 
     }
 
+    //Operator item
     public struct OPERATOR
     {
         public string Body;
